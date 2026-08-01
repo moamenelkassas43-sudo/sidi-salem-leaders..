@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | إدارة المنصة - مؤمن القصاص</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">← العودة للموقع الرئيسي</a>
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggleBtn">
+                    <span id="themeIcon">🌙</span>
+                    <span id="themeText">الوضع الغامق</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <h1>لوحة إشراف المنصة الشخصية</h1>
+            <p style="color: var(--text-secondary);">إدارة الرسائل الواردة ونشر المقالات والأخبار الجديدة</p>
+        </div>
+
+        <!-- قسم الرسائل الواردة -->
+        <section class="section">
+            <h2 class="section-title">الرسائل الواردة من نموذج التواصل</h2>
+            <div class="card" id="messagesList">
+                <p style="color: var(--text-secondary);">جاري تحميل الرسائل...</p>
+            </div>
+        </section>
+
+        <!-- قسم إضافة مقال جديد -->
+        <section class="section">
+            <h2 class="section-title">إضافة مقال أو بحث جديد</h2>
+            <div class="card">
+                <form id="addArticleForm">
+                    <div class="form-group">
+                        <label for="artTitle">عنوان المقال</label>
+                        <input type="text" id="artTitle" class="form-control" placeholder="أدخل عنوان المقال" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="artCategory">التصنيف</label>
+                        <input type="text" id="artCategory" class="form-control" placeholder="مثال: قيادي، تقني، شعر وإلقاء" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="artContent">محتوى المقال</label>
+                        <textarea id="artContent" class="form-control" rows="7" placeholder="اكتب نص المقال كاملاً هنا..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">نشر المقال على المنصة</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- قسم المقالات المنشورة سكريبتياً -->
+        <section class="section">
+            <h2 class="section-title">المقالات المضافة عبر اللوحة</h2>
+            <div class="card" id="articlesList">
+                <p style="color: var(--text-secondary);">جاري تحميل المقالات...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>لوحة التحكم الخاصة بالمشرف | مؤمن القصاص</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
