@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤمن القصاص | المنصة الشخصية والرسمية</title>
+    <!-- استدعاء خط Cairo للطباعة الاحترافية -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">مؤمن القصاص</a>
+            <ul class="nav-links">
+                <li><a href="#about">من أنا</a></li>
+                <li><a href="#achievements">الإنجازات</a></li>
+                <li><a href="#articles">المقالات والبحوث</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggleBtn">
+                    <span id="themeIcon">🌙</span>
+                    <span id="themeText">الوضع الغامق</span>
+                </button>
+                <a href="dashboard.html" class="btn btn-sm">لوحة التحكم</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- القسم التعريفي البارز (Hero Section) -->
+        <section id="about" class="section hero-section">
+            <div class="hero-content">
+                <span class="badge">المنصة الرسمية</span>
+                <h1 class="hero-title">مؤمن هشام سعد القصاص</h1>
+                <p class="hero-subtitle">أمين اتحاد طلاب إدارة سيدي سالم التعليمية | رئيس غرفة عمليات امتحانات الثانوية العامة بسيدي سالم | عضو مجلس اتحاد مديرية التربية والتعليم بكفر الشيخ</p>
+                <p class="hero-text">
+                    ناشط في مجال القيادة الطلابية والعمل الإداري والمؤسسي، حائز على المركز الأول على مستوى الجمهورية في مسابقة دوري المكاتب التنفيذية، والمركز الأول جمهورية في مسابقة أوائل الطلبة. مهتم بتقنيات البرمجة، والذكاء الاصطناعي، والتصميم الجرافيكي، وإلقاء القصائد والصحافة المدرسية.
+                </p>
+            </div>
+        </section>
+
+        <!-- قسم الإنجازات والمسؤوليات القيادية -->
+        <section id="achievements" class="section">
+            <h2 class="section-title">المسؤوليات والإنجازات الوطنية</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <div class="card-icon">🏛️</div>
+                    <h3 class="card-title">رئيس غرفة العمليات</h3>
+                    <div class="card-meta">إدارة سيدي سالم التعليمية</div>
+                    <p class="card-body">إدارة ومتابعة سير امتحانات الثانوية العامة والتنسيق الإداري والميداني لضمان انتظام العملية الامتحانية.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">👑</div>
+                    <h3 class="card-title">المركز الأول جمهورية</h3>
+                    <div class="card-meta">دوري المكاتب التنفيذية</div>
+                    <p class="card-body">تحقيق المركز الأول على مستوى جمهورية مصر العربية في قيادة وتصميم أنشطة الاتحادات الطلابية والمكاتب التنفيذية.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3 class="card-title">المركز الأول جمهورية</h3>
+                    <div class="card-meta">مسابقة أوائل الطلبة</div>
+                    <p class="card-body">التفوق الأكاديمي والحصول على المركز الأول على مستوى الجمهورية في مسابقة أوائل الطلبة للمرحلة الإعدادية.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🇪🇬</div>
+                    <h3 class="card-title">ممثل المحافظة</h3>
+                    <div class="card-meta">مؤسسة إعداد قادة الجمهورية</div>
+                    <p class="card-body">تمثيل محافظة كفر الشيخ وإدارة سيدي سالم في البرامج القيادية القومية لمؤسسة إعداد قادة الجمهورية.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- قسم المقالات والأبحاث العلميّة والقياديّة -->
+        <section id="articles" class="section">
+            <h2 class="section-title">المقالات والبحوث</h2>
+            <div class="grid" id="articlesGrid">
+                
+                <article class="card">
+                    <span class="tag">قيادة وإدارة</span>
+                    <h3 class="card-title">القيادة الاستراتيجية ودورها في إدارة الأزمات التعليمية</h3>
+                    <div class="card-meta">بقلم: مؤمن القصاص</div>
+                    <p class="card-body">القيادة ليست ممارسة السلطة، بل هي قدرة الاستشراف وقراءة المعطيات الميدانية واتخاذ القرارات الحاسمة في الأوقات الحرجة...</p>
+                </article>
+
+                <article class="card">
+                    <span class="tag">تكنولوجيا وذكاء اصطناعي</span>
+                    <h3 class="card-title">تطبيقات الذكاء الاصطناعي في تطوير التعليم والبرمجة</h3>
+                    <div class="card-meta">بقلم: مؤمن القصاص</div>
+                    <p class="card-body">استعراض لأحدث أدوات الذكاء الاصطناعي وكيفية تسخيرها في تطوير الواجهات البرمجية وبناء المنصات الرقمية المتقدمة...</p>
+                </article>
+
+                <article class="card">
+                    <span class="tag">ثقافة وإلقاء</span>
+                    <h3 class="card-title">بلاغة الكلمة وأثر الشعر والإلقاء في بناء شخصية القائد</h3>
+                    <div class="card-meta">بقلم: مؤمن القصاص</div>
+                    <p class="card-body">دراسة حول أهمية الخطابة والإلقاء الشعري والصحافة المدرسية في التأثير الجماهيري وبناء الخطاب القيادي الفعال...</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- قسم التواصل المباشر -->
+        <section id="contact" class="section">
+            <h2 class="section-title">التواصل المباشر</h2>
+            <div class="card form-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">الاسم بالكامل</label>
+                        <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكريم" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة أو الاستفسار</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-full">إرسال الرسالة</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © مؤمن القصاص | إدارة سيدي سالم - كفر الشيخ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
